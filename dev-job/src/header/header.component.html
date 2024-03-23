@@ -1,0 +1,38 @@
+<header class="mb-5">
+    <div class="container d-flex justify-content-between align-items-center pt-5">
+      <img class="" src="../assets/desktop/logo.svg" alt="" />
+      <div>
+        <img id="nightModeIcon" src="../assets/desktop/icon-moon.svg" alt="Night Mode" onclick="toggleNightMode()" />
+        <img id="dayModeIcon" src="../assets/desktop/icon-sun.svg" alt="Day Mode" onclick="toggleDayMode()" />
+      </div>
+    </div>
+  
+    <div
+      class="container bg-white py-3 px-3 mt-5"
+    >
+      <div class="row justify-content-between">
+        <div class="col-3">
+          <div class="search">
+            <img src="../assets/desktop/icon-search.svg" alt="timkiem" />
+            <input
+              type="text"
+              placeholder="Filter by title, companies, expertirse..."
+            />
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="location">
+            <img src="../assets/desktop/icon-location.svg" alt="timkiem" />
+            <input type="text" placeholder="Filter by location" />
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="d-flex justify-content-between align-items-center gap-3">
+            <input type="checkbox" placeholder="Filter by location" />
+            <h4 class="mb-0">Full time Only</h4>
+            <button type="button" class="btn btn-primary">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
