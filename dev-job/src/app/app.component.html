@@ -1,13 +1,13 @@
 
 <app-header></app-header>
-<div class="mt-5 mb-5 py-4"></div>
-<div class="container mt-5 px-0">
-  <div class="row mt-5">
+<div  id="line" class="mt-5"></div>
+<div class="container mt-5 mb-5 px-0">
+  <div class="row">
     <div class="col-4 mt-5" *ngFor="let job of jobs">
-      <div class="card">
+      <div class="card px-3">
         <div class="position-relative mb-3">
-          <div id="image" class="position-absolute py-2 px-2 mx-5 translate-middle d-flex align-items-center" [ngStyle]="{'background-color': job.logoBackground}">
-            <img class=" " [src]="job.logo" width="80px" alt="">
+          <div id="image" class="position-absolute py-2 px-2 mx-5 translate-middle d-flex align-items-center justify-content-center" [ngStyle]="{'background-color': job.logoBackground}">
+            <img class=" " [src]="job.logo"alt="">
           </div>
         </div>
         <div class="card-body mt-3">
@@ -26,6 +26,6 @@
 </div>
 
 
-<div class="d-flex justify-content-center mt-5">
+<div class="d-flex justify-content-center mt-5 mb-5">
   <button>Load More</button>
 </div>
