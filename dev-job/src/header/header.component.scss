@@ -1,10 +1,11 @@
 header {
-    height: 200px;
+    height: 180px;
     background-image: url(../assets/desktop/bg-pattern-header.svg);
     background-repeat: no-repeat;
     background-size: cover;
-}
+    background-position-y: bottom;
 
+}
 input {
     padding: 8px 25px;
     border: none;
@@ -27,4 +28,8 @@ input[type="checkbox"]{
 #search {
     background-color: #5964E0 ;
     padding: 15px 35px;
+}
+
+button {
+    display: block;
 }

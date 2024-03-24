@@ -1,0 +1,27 @@
+<div  id="line" class="mt-5"></div>
+
+<div class="container mt-5 mb-5 px-0">
+
+<div class="row">
+
+<div class="col-4 mt-5" *ngFor="let job of jobs">
+    <div class="card px-3">
+      <div class="position-relative mb-3">
+        <div id="image" class="position-absolute py-2 px-2 mx-5 translate-middle d-flex align-items-center justify-content-center" [ngStyle]="{'background-color': job.logoBackground}">
+          <img class=" " [src]="job.logo"alt="">
+        </div>
+      </div>
+      <div class="card-body mt-3">
+        <div class="d-flex gap-2 mb-2">
+          <h6 class="card-subtitle text-muted">{{ job.postedAt }}</h6>
+          <h6 class="card-subtitle text-muted">{{ job.contract }}</h6>
+        </div>
+        <h5 id="title" class="card-title">{{ job.position }}</h5>
+        <h6 class="card-subtitle text-muted mt-2 mb-5">{{ job.company }}</h6>
+
+        <h6 id="country">{{ job.location }}</h6>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
