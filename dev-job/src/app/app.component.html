@@ -1,9 +1,0 @@
-<div class="full" [ngClass]="{isNightMode: isNightMode}">
-
-    <app-header (toggle)="mode($event)" ></app-header>
-    <app-card [jobs]="jobs" [isNightMode]="isNightMode" ></app-card>
-    <div class="d-flex justify-content-center mt-5 mb-5">
-    <app-button [btnName]="'Load More'"></app-button>
-    </div>
-    
-</div>
