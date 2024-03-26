@@ -1,21 +1,24 @@
-import { Component, EventEmitter, HostBinding, Output } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { ButtonComponent } from '../button/button.component';
-import { NgClass } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [ButtonComponent, NgClass],
+  imports: [ButtonComponent, FormsModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
- 
-  @Output() toggleMode = new EventEmitter<void>();
+  @Output() toggle = new EventEmitter <boolean> ();
 
-  constructor() {}
+  isNightMode: boolean = false;
 
-  onToggleMode() {
-    this.toggleMode.emit();
+  toggleMode() {
+    this.toggle.emit(this.isNightMode);
   }
+
+
+
 }

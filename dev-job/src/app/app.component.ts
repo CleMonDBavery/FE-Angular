@@ -1,5 +1,4 @@
-import { Component, Input, NgModule, OnInit } from '@angular/core';
-// import * as data from '../assets/data.json'
+import { Component, OnInit } from '@angular/core';
 import { NgClass, NgFor, NgStyle } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from '../header/header.component';
@@ -20,7 +19,7 @@ export class AppComponent  implements OnInit {
   title = 'dev-job';
 
   jobs: any[]= [];
-
+  isNightMode: boolean = false;
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
@@ -30,11 +29,10 @@ export class AppComponent  implements OnInit {
       });
   }
 
-  colorMode = 'lightMode';
-
-  toggleMode() {
-    console.log ('change thanh cong')
-    this.colorMode = this.colorMode === 'lightMode' ? 'nightMode' : 'lightMode';
+  mode(isNightMode: any){
+    this.isNightMode = isNightMode;
   }
+
+
 
 }
