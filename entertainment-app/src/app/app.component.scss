@@ -1,104 +1,12 @@
-*{
-    color: white;
-}
-
-img {
-    width: 100%;
-}
-#nav {
-  max-width: 6%;
-  background-color: #161d2f;
-  border-radius: 25px;
-  padding: 35px;
-  height: calc(100vh - 50px);
-  position: fixed;
-}
-#logo {
-  width: 50px;
-}
 #overall {
-  background-color: #10141f;
-  padding: 25px;
-}
-#nav-img {
-  img {
-    width: 25px;
+    background-color: #10141f;
+    padding: 25px;
   }
-}
 .col-11 {
     margin-top: 25px;
 }
-#search {
-    img {
-        width:  30px;
-        height: 30px;
-    }
-    input {
-        border: none;
-        cursor: none;
-        background-color: #10141f;
-        padding: 15px;
-        color: gray;
-        font-size: 15px;
 
-    }
-    input::placeholder {
-        color: gray;
-    }
-}
-#trending {
-    .col-4 {
-        img {
-            border-radius: 15px;
-        }
-    }
-    #bookmark {
-        .img {
-            background-color: rgba(128, 128, 128, 0.43);
-            border-radius: 50%;
-            img {
-                width:  20px;
-                height: 20px;
-            }
-        }
-        
-    }
-    ul {
 
-        padding-left: 0;
-        li:first-child {
-            list-style: none;
-        }
-        
-    }
 
-}
 
-#recomment {
-    .card {
-        background-color: #10141f;
-        border: none;
-
-        ul {
-            color: white;
-            li:first-child {
-                list-style: none;
-            }
-        }
-
-        #bookmark {
-            background-color: rgba(128, 128, 128, 0.43);
-
-            padding: 15px;
-            width:  25px;
-            height: 25px;
-            .img {
-            width:  15px;
-            height: 15px;
-            }
-            
-        }
-
-    }
-}
 
