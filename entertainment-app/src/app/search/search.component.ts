@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, Output, output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { IMovie } from '../app/type';
+import { IMovie } from '../movie.interface';
 import { NgFor, NgIf } from '@angular/common';
 
 @Component({
@@ -11,8 +11,8 @@ import { NgFor, NgIf } from '@angular/common';
   styleUrl: './search.component.scss',
 })
 export class SearchComponent {
-  title: any;
-  @Input() Movie: IMovie[] = [];
+  title: string = '';
+  @Input() movie: IMovie[] = [];
   @Output() searchMode = new EventEmitter<string>();
 
   constructor() {}

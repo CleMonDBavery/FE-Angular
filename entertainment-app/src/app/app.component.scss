@@ -1,12 +1,10 @@
-#overall {
-    background-color: #10141f;
-    padding: 25px;
-  }
-.col-11 {
-    margin-top: 25px;
+@use "../variables.scss" as *;
+
+.overall {
+  background-color: $black-color;
+  padding: 25px;
 }
 
-
-
-
-
+.col-11 {
+  margin-top: 25px;
+}

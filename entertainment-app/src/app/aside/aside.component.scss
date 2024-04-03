@@ -1,0 +1,31 @@
+:host {
+  color: white;
+}
+
+img {
+  width: 100%;
+}
+
+#nav {
+  max-width: 6%;
+  background-color: #161d2f;
+  border-radius: 25px;
+  padding: 35px;
+  height: calc(100vh - 50px);
+  position: fixed;
+
+  #logo {
+    width: 50px;
+  }
+
+  #overall {
+    background-color: #10141f;
+    padding: 25px;
+  }
+
+  #nav-img {
+    img {
+      width: 25px;
+    }
+  }
+}

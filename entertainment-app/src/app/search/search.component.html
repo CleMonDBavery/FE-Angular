@@ -1,0 +1,18 @@
+<div id="search" class="d-flex align-items-center">
+  <img src="../assets/icon-search.svg" alt="search" />
+  <input
+    type="text"
+    class="form-control"
+    name="title"
+    [(ngModel)]="title"
+    (ngModelChange)="onSearchInputChange()"
+    placeholder="Search for Movies or TV series"
+  />
+</div>
+<h2 id="title">Video search</h2>
+<div id="fullvideo">
+  <div id="movie" *ngFor="let result of movie">
+    <img [src]="result.thumbnail.regular.large" alt="" />
+    <p>{{ result.title }}</p>
+  </div>
+</div>
