@@ -1,0 +1,12 @@
+<div id="overall" class="container-fluid">
+  <div id="row" class="row">
+    <div class="col-1">
+      <app-aside></app-aside>
+    </div>
+    <div class="col-11 px-0">
+      <app-search [Movie]="Movie" (searchMode)="searchMode($event)" ></app-search>
+      <app-trending></app-trending>
+      <app-recomment></app-recomment>
+    </div>
+  </div>
+</div>

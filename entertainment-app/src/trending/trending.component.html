@@ -1,0 +1,21 @@
+<div id="trending" class="mt-3">
+  <h1 class="mb-3">Trending</h1>
+  <div class="row">
+    <div class="col-4 position-relative" *ngFor="let movie of trendingMovies;">
+      <img [src]="movie.thumbnail.trending.large" alt="" />  
+      <div class="position-absolute bottom-0 start-0 mx-3 my-3 ">
+        <ul class="d-flex gap-4 mb-2 mx-3">
+          <li>{{ movie.year }}</li>
+          <li>{{ movie.category }}</li>
+          <li>{{ movie.rating }}</li>
+        </ul>
+        <h2 class="mx-3 mb-0">{{ movie.title }}</h2>
+      </div>
+      <div class="position-absolute top-0 top-0 end-0 px-2 py-2"  id="bookmark">
+        <div style="width: 25px; height: 25px;">
+          <img src="../assets/icon-bookmark-full.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
