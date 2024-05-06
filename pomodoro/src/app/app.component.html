@@ -1,0 +1,81 @@
+<div class="overall">
+  <div class="all">
+    <h2>Pomodoro</h2>
+
+    <div class="action">
+      <ul class="rounded-pill">
+        <!-- Sử dụng sự kiện click để thay đổi option -->
+        <li
+          class="rounded-pill"
+          [ngClass]="{ selected: option === 'pomodoro' }"
+          (click)="setOption('pomodoro')"
+        >
+          Pomodoro
+        </li>
+        <li
+          class="rounded-pill"
+          [ngClass]="{ selected: option === 'short' }"
+          (click)="setOption('short')"
+        >
+          Short Break
+        </li>
+        <li
+          class="rounded-pill"
+          [ngClass]="{ selected: option === 'long' }"
+          (click)="setOption('long')"
+        >
+          Long Break
+        </li>
+      </ul>
+
+      <!-- <div class="button rounded-pill">
+        <input
+          [(ngModel)]=""
+          type="button"
+          class="btn rounded-pill"
+          style="background-color: #f87170"
+          value="pomodoro"
+        />
+        <input
+          [(ngModel)]=""
+          type="button"
+          class="btn rounded-pill"
+          value="short break"
+        />
+        <input
+          [(ngModel)]=""
+          type="button"
+          class="btn rounded-pill"
+          value="long break"
+        />
+      </div> -->
+    </div>
+
+    <div class="time rounded-circle">
+      <div class="circle rounded-circle">
+        <div class="content rounded-circle">
+          <div class="timer d-flex">
+            <h1 class="minutes">{{ minutes }}</h1>
+            <h1 class="mid">:</h1>
+            <h1 class="seconds">{{ seconds }}</h1>
+          </div>
+          <a href="#" class="button fs-5" *ngIf="!started" (click)="start()">
+            START
+          </a>
+          <a href="#" class="button fs-5" *ngIf="started" (click)="pause()">
+            PAUSE
+          </a>
+          <!-- <a href="#" class="button fs-5" (click)="stop()"> RESET </a> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="progress-bar">
+      <div class="progress" [ngStyle]="{ width: progressWidth }"></div>
+    </div>
+
+    <div class="setting">
+      <i class="bi bi-gear-fill"></i>
+    </div>
+  </div>
+</div>
